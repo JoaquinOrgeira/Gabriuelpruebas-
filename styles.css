@@ -1,3 +1,28 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+img, video, iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+iframe {
+  display: block;
+  margin: 0 auto;
+  aspect-ratio: 16 / 9;
+}
+
+a {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
 html{
   background-color: #bdb76b;
   width:100%;
@@ -147,10 +172,31 @@ left: 30%;
   width: 20%;
 }
 
-@media(max-width: 602px){
-iframe{
-  width: 90%
-
+@media (max-width: 602px) {
+  iframe {
+    width: 100%;
+    max-width: 100%;
+  }
+  .tiempo h4 {
+    width: 100%;
+    left: unset;
+  }
+  summary {
+    width: 90%;
+  }
+  .bio {
+    width: 100%;
+    padding: 4%;
+  }
+  body {
+    padding: 0 8px;   /* margen seguro */
+  }
+  .footer .icon {
+    font-size: 24px;
+  }
+  h1 {
+    font-size: 32px;
+  }
 }
 .tiempo h4{
 width: 100%;
